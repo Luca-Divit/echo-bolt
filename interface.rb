@@ -2,20 +2,19 @@
 require_relative "./checkout"
 
 ### Talking with the user ###
-puts "What's your year of birth?"
-birth_year = gets.chomp.to_i
+puts "add an item to the basket"
 
-puts "What's your month of birth?"
-birth_month = gets.chomp.to_i
 
-puts "What's your day of birth?"
-birth_day = gets.chomp.to_i
+puts "add another item to the basket"
+
+
+puts "add one last item to the basket"
+
 #############################
 
-puts "Computing your age (with the most complicated algorithms)........"
+puts "Computing your total (checking for discounts available)........"
 
-# TODO: This is probably where you'd like to use your brand new function!
-calculated_age = age_in_days(birth_day,birth_month,birth_year)
+# Using the method to calculate the total!
 
-# Finally, print user's age in days:
-puts "You are #{calculated_age} days old... phew!"
+
+# Finally, we print the total including possible promotions:
