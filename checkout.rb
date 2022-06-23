@@ -1,32 +1,13 @@
 class Checkout
-  def intialize(args = {})
+  attr_reader :total, :basket, :prices, :spending_deal
+
+  def initialize(args = {})
+    @total = 0
+    @basket = []
+    @prices = args["prices"]
+    @spending_deal = args["spending_deal"]
   end
 
-  def self.
 
-  end
-
-  def scan
-    @items << item
-  end
-
-  def total
-    sum = 0
-    @items.each do |item|
-      sum += item.price
-    end
-  end
-
-  def promotional_rules
-
-  end
-end
-
-class Item
-  def initialize(product_code, name, price)
-    @product_code = product_code
-    @name = name
-    @price = price
-  end
 
 end
