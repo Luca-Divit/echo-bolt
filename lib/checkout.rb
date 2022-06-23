@@ -8,8 +8,6 @@ class Checkout
     @spending_deal = args['spending_deal']
   end
 
-  private
-
   # If an item is already in the basket add one quantity otherwise add item
   def scan(item)
     if !@items.keys.include? item
