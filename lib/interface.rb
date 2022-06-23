@@ -58,6 +58,8 @@ while item != ''
   co.scan(item) if item != ''
 end
 
+total = co.total_after_discount
+
 # Creating an empty basket and pushing any single item in it
 basket = []
 co.basket.each do |item|
@@ -69,4 +71,4 @@ end
 # at last we display the final price in case the 10% has been added
 puts "total price before discount: £#{co.total}"
 puts "basket: #{basket.length.zero? ? 'basket is empty' : basket.join(', ')}"
-puts "Total price is: £#{total_after_discount}"
+puts "Total price is: £#{total}"
