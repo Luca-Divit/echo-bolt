@@ -11,9 +11,9 @@ cd inside and clone the repo.
 
 Make sure you have ruby installed and run: bundle install to install the gems.
 
-You can now run the checkout app typing: ruby interface.rb
+You can now run the checkout app cd inside: lib/ and type: ruby interface.rb
 
-To launch the test type: rspec on your terminal/command line.
+To launch the test cd back in the main repo typing cd .. and then type: rspec.
 
 
 
